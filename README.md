@@ -16,7 +16,6 @@ Implementing Twitter sentiment analysis using the Naive Bayes algorithm involves
 5. Model training: Use the labeled data to train a Naive Bayes classifier that can predict the sentiment of new tweets.
 
 6. Model evaluation: Evaluate the performance of the Naive Bayes classifier using metrics such as accuracy, precision, recall, and F1-score.
-![Page1](https://user-images.githubusercontent.com/123835116/236681412-fdb4fcbb-f808-47c1-9178-21fe55d67bf5.png)
 
 7. Prediction: Use the trained Naive Bayes classifier to predict the sentiment of new tweets.
 ```
