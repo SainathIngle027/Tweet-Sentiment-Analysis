@@ -23,7 +23,7 @@ Implementing Twitter sentiment analysis using the Naive Bayes algorithm involves
 
 Image of project Web site using flask and HTML :
 
-
+![alt text](Page1.png)
 To run this application:
 
 ```
