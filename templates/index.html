@@ -1,0 +1,123 @@
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- You can add any additional meta tags, stylesheets, or scripts in the head section -->
+    <title>Sentimental Analysis</title>
+</head>
+<style>
+    body{
+        background-color: #fdf9e2;
+    }
+    h1{
+        border: #700d0d solid 4px;
+        border-radius: 20px;
+        color: #435cff;
+        padding: 10px;
+        background-color: azure;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: center;
+        font-size: 36px;
+    }
+    h2{
+        font-size: 36px;
+        text-align: center;
+        font-style: bold;
+        color: #ff4d4a;
+    }
+
+    textarea{
+
+        width: 900px;
+        height: 200px;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        display: block;
+        font-size: 20px;
+        border: #0d1a70 solid 4px;
+        border-radius: 20px;
+        box-shadow: 0px 6px 4px 4px rgba(26, 109, 253, 0.3);
+        
+    }
+    textarea:hover 
+    {
+        box-shadow: 0px 4px 5px 5px rgb(169, 122, 213);
+    }
+    
+    textarea::-webkit-scrollbar 
+    {
+        display: none;
+    }
+
+    p{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .twitte 
+    {
+        font-size: 24px;
+        display: block;
+        margin: 0 auto; 
+        text-align: center;
+    }  
+    
+    button
+    {
+        display: block; /* make the input element a block-level element */
+        margin: 0 auto; /* center the element horizontally using margin auto */
+        width: 200px;
+        height:60px;
+        margin-top: 30px;
+        font-size : 20px;
+        background-color: rgb(165, 255, 203);
+        border-radius: 20px;
+        border: black solid 5px;
+    }
+    button:hover 
+    {
+        background-color: rgba(252, 175, 137, 0.5);
+        box-shadow: 0px 4px 5px 5px rgb(165, 255, 203);
+    }
+   
+    p{
+        
+        padding: 8px;
+        border-radius: 10px;
+        margin-left: 250px;
+        margin-right: 250px;
+        width: auto;
+        margin-top: 60px;
+        border: #0d1a70 ;
+        box-shadow: 5px 9px 5px 5px rgba(244, 141, 255, 0.5);
+        
+    }  
+    
+</style>
+
+<body>
+    <h1>Tweet Sentiment Analysis</h1>
+    <h2>Analysis your tweet before posting on twitter</h2>
+        <form action="/predict" method="POST">
+                <br>
+                <textarea id="twitte" name="twitte" placeholder="Enter text here"  oninput="autoResize()">{{ check }}</textarea>
+                <br>
+                <button type="submit" id="submit" >Check Your tweet</button>
+        </form>
+        
+        <p><i>tweet Result :  </i> <b>{{ text }}</b></p>
+</body>
+<script>
+    function autoResize() 
+    {
+        const textarea = document.getElementById('myTextarea');
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+    }
+</script>
+
+</html>
