@@ -1,5 +1,9 @@
 # GitHub Codespaces ♥️ Flask
 
+[Project Video Link ](https://drive.google.com/file/d/13mxlQN95VG_XSBRwEArVzeX-tUDTvS4T/view?usp=drive_link)
+<br>
+<br>
+
 Twitter Sentiment Analysis is a machine learning project that involves analyzing the sentiment of tweets using natural language processing (NLP) techniques. The aim of this project is to develop a model that can automatically classify the sentiment of a tweet as either positive, negative or neutral. This can be useful in various applications, such as brand monitoring, customer feedback analysis, and political analysis.
 
 Implementing Twitter sentiment analysis using the Naive Bayes algorithm involves several steps ::
